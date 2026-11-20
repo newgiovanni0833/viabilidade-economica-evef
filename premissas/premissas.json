@@ -1,0 +1,40 @@
+{
+  "empresa": "Estúdio Aurora (empresa fictícia)",
+  "descricao": "Hub audiovisual de pequeno porte: locação de estúdio, produção e consultoria",
+  "horizonte_anos": 5,
+  "tma_anual": 0.20,
+  "investimento_inicial": 70000,
+  "reserva_de_caixa": 15000,
+  "custo_variavel_pct_receita": 0.12,
+  "reajuste_anual_custos_fixos": 0.05,
+  "capex_manutencao_anual": 4000,
+  "custos_fixos_mensais": {
+    "aluguel": 3500,
+    "condominio_e_iptu": 450,
+    "energia": 600,
+    "agua": 100,
+    "internet": 150,
+    "contabilidade": 420,
+    "softwares": 300,
+    "marketing": 800,
+    "manutencao": 200,
+    "pro_labore_socios": 4000
+  },
+  "cenarios": {
+    "Pessimista": {
+      "receita_mes_1": 5000,
+      "receita_mes_12": 12000,
+      "crescimento_anual_anos_2_a_5": [0.04, 0.03, 0.03, 0.02]
+    },
+    "Realista": {
+      "receita_mes_1": 7000,
+      "receita_mes_12": 19000,
+      "crescimento_anual_anos_2_a_5": [0.15, 0.10, 0.08, 0.05]
+    },
+    "Otimista": {
+      "receita_mes_1": 9000,
+      "receita_mes_12": 26000,
+      "crescimento_anual_anos_2_a_5": [0.20, 0.12, 0.10, 0.08]
+    }
+  }
+}
