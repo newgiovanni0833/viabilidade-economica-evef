@@ -83,4 +83,4 @@ Python · fluxo de caixa descontado · análise de cenários · Simples Nacional
 
 ## 👤 Autor
 
-**Newton Giovanni** · Economista (CORECON-MT nº 02151) · [LinkedIn](https://www.linkedin.com/in/newton-giovanni/)
+**Newton Giovanni** · Economista (CORECON-MT nº 02151) · [LinkedIn](https://www.linkedin.com/in/newton-giovanni/) · [Portfólio](https://github.com/newgiovanni0833)
