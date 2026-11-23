@@ -1,10 +1,10 @@
-# 💰 Estudo de Viabilidade Econômico-Financeira (EVEF)
+# Estudo de Viabilidade Econômico-Financeira (EVEF)
 
 Modelo financeiro em três cenários para decidir se um novo negócio se paga: VPL, TIR, Payback, ROI, ponto de equilíbrio e, principalmente, o **vale de caixa** da fase de rampa.
 
-> ⚠️ **Dados fictícios.** O "Estúdio Aurora" e todas as premissas são inventados. A estrutura do modelo é a que aplico em estudos reais para pequenos negócios.
+> **Dados fictícios.** O "Estúdio Aurora" e todas as premissas são inventados. A estrutura do modelo é a que aplico em estudos reais para pequenos negócios.
 
-## 🎯 Problema de negócio
+## Problema de negócio
 
 Quem abre um negócio costuma perguntar "em quanto tempo isso se paga?". A pergunta que quebra empresas é outra: **"o caixa aguenta até lá?"**. Um projeto pode ter VPL positivo e, mesmo assim, ficar sem dinheiro no sexto mês.
 
@@ -13,7 +13,7 @@ Por isso o modelo é **mensal** na operação e **anual** nos indicadores:
 - o fluxo mensal mostra a rampa de receita, o mês de virada e o caixa mínimo;
 - o fluxo anual alimenta VPL, TIR e Payback.
 
-## 🧮 Metodologia
+## Metodologia
 
 | Elemento | Como é tratado |
 |---|---|
@@ -27,7 +27,7 @@ Por isso o modelo é **mensal** na operação e **anual** nos indicadores:
 
 Usar a alíquota efetiva progressiva, em vez de um valor fixo de imposto, evita subestimar a carga tributária quando o faturamento cresce.
 
-## ▶️ Como executar
+## Como executar
 
 Requer apenas Python 3.9+ (biblioteca padrão).
 
@@ -42,7 +42,7 @@ Saídas em `saida/`:
 - `relatorio.md`: indicadores, fluxo anual e leitura de cada cenário
 - `fluxo_anual.csv` e `caixa_mensal.csv`: prontos para Excel ou Power BI
 
-## 📊 Resultado da demonstração
+## Resultado da demonstração
 
 Investimento de R$ 70 mil + reserva de R$ 15 mil · horizonte de 5 anos · TMA de 20% a.a.
 
@@ -62,7 +62,7 @@ Investimento de R$ 70 mil + reserva de R$ 15 mil · horizonte de 5 anos · TMA d
 
 Relatório completo em [saida/relatorio.md](saida/relatorio.md).
 
-## ✅ Testes
+## Testes
 
 ```bash
 pip install pytest
@@ -71,16 +71,16 @@ pytest -q
 
 Os testes conferem a alíquota efetiva em cada faixa (inclusive a continuidade entre faixas), VPL e TIR contra casos conhecidos, o payback interpolado, a rampa de receita e a coerência entre o fluxo mensal e o anual.
 
-## ⚠️ Limites do modelo
+## Limites do modelo
 
 - A tabela do Simples Nacional está escrita no código: confira a tabela vigente antes de aplicar a um caso real.
 - O modelo não trata o Fator R (migração entre Anexo III e Anexo V), financiamento, depreciação nem capital de giro por prazo de recebimento.
 - Os cenários são determinísticos. Não há simulação probabilística.
 
-## 🛠️ Tecnologias e metodologias
+## Tecnologias e metodologias
 
 Python · fluxo de caixa descontado · análise de cenários · Simples Nacional · pytest
 
-## 👤 Autor
+## Autor
 
 **Newton Giovanni** · Economista (CORECON-MT nº 02151) · [LinkedIn](https://www.linkedin.com/in/newton-giovanni/) · [Portfólio](https://github.com/newgiovanni0833)
